@@ -1,0 +1,149 @@
+/* .category-container {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+:root {
+  --yellow: #ffc700;
+  --black: #000000;
+  --green: #10a958;
+  --white: #fff;
+}
+
+header {
+  background-color: transparent;
+}
+
+.category-container h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.category {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.c-card .c-img {
+  width: 287px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.c-card .c-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.c-card .c-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.c-card .c-content P {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.c-card .c-content h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ---------------------------------Responsive-Css-All-Secrren--------------------------- */
+
+@media screen and (max-width: 1200px) {
+  .c-card {
+    width: 219px;
+  }
+
+  .c-card .c-img {
+    width: 219px;
+    height: 291px;
+  }
+  footer {
+    height: 571px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .category-container h2 {
+    font-size: 28px;
+  }
+
+  .c-card {
+    width: 191px;
+  }
+
+  .c-card .c-img {
+    width: 191px;
+    height: 255px;
+  }
+  ul {
+    padding-left: 0;
+  }
+
+  footer {
+    height: 469px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .category-container h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .category {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .c-card {
+    width: 179px;
+  }
+
+  .c-card .c-img {
+    width: 179px;
+    height: 236px;
+  }
+  .c-card .c-content P {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .c-card .c-content h6 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  footer {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .c-card {
+    width: 160px;
+  }
+
+  .c-card .c-img {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .c-card {
+    width: 144px;
+  }
+
+  .c-card .c-img {
+    width: 144px;
+  }
+}
